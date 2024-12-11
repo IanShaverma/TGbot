@@ -8,6 +8,7 @@ Channel {channelTelegramId userTelegramID listening botAdmin}
 Prompt {question photo melody}
 */
 
+/*
 // UseCases
   //by User
 type UserUseCase interface {
@@ -73,4 +74,15 @@ type GPTGeneration interface{
     //Prompt
   GenerateChatGPTPrompt(photo domain.Prompt) (error) //Convert photo --> text
   MusicGPTPrompt(question domain.Prompt) (error)//Convert text --> melody
+}
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("Hello world!")
 }
