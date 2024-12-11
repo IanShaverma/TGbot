@@ -37,7 +37,7 @@ type UserService interface {
     GeneratePublicationByUser(photo domain.Publication, userTelegramID domain.User) (domain.Publication error, domain.User error)
 }
 
-type TelegramService {
+type TelegramService interface {
     //User
   AuthorizeUser(userTelegramID domain.User, auth_key_id domain.User) (domain.User error)
     //Publication
@@ -66,7 +66,7 @@ type PublicationAPI interface{
   GetPhoto(publicationId domain.Publication, channelTelegramID domain.Channel) (error)
   SetPhoto(photo domain.Publication, publicationId domain.Publication, channelTelegramID domain.Channel) (error)
   GetMelody()
-  SetMelody(melody domain.Publication, publicationId domain.Publication, channelTelegramID domain.Channel) (error
+  SetMelody(melody domain.Publication, publicationId domain.Publication, channelTelegramID domain.Channel) (error)
 }
 
 type GPTGeneration interface{
